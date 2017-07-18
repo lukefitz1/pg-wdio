@@ -9,9 +9,9 @@ class Header {
 	get modalPwField() { return $('#mini-password'); }
 	get modalLoginButton() { return $('#login > div.col-2.registered-users > form > div > button'); }
 	get logOutLink() { return $('#header > div.skip-links > div > div.account-login > a'); }
-	get miniCartIcon() { return $(''); }
-	get miniCartDropdown() { return $(''); }
-	get miniCartCheckoutBtn() { return $(''); }
+	get miniCartIcon() { return $('#header > div.skip-links > div > li > a'); }
+	get miniCartDropdown() { return $('#header-cart > div.minicart-wrapper'); }
+	get miniCartViewCartBtn() { return $('#clearmini-ul > li > a.button.checkout-button'); }
 
 	modalLogin(un, pw) {
 		this.modalEmField.setValue(un);
